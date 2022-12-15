@@ -1,0 +1,20 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "Package du projet 3",
+  "main": "./SCSS/index.scss",
+  "scripts": {
+    "sass": "sass --watch ./SCSS/index.scss:./CSS/style.css",
+    "sass-menu": "sass --watch ./SCSS/menu.scss:./CSS/style-menu.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnaudR63/Projet-3.git"
+  },
+  "author": "Arnaud Rivet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnaudR63/Projet-3/issues"
+  },
+  "homepage": "https://github.com/ArnaudR63/Projet-3#readme"
+}
