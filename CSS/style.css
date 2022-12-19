@@ -1,3 +1,63 @@
+#rotate {
+  animation: rotate 1s 2 both;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#rotate i {
+  animation: rotate-inversed 1s 2 both;
+}
+@keyframes rotate-inversed {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 
+#loader {
+  animation: disparition 1s 2s 1 both;
+}
+@keyframes disparition {
+  from {
+    translate: 0vw;
+  }
+  to {
+    translate: -110vw;
+  }
+}
+
+#loader {
+  background-color: #99E2D0;
+  width: 110vw;
+  height: 110vh;
+  margin-top: -100px;
+  margin-left: -5vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader i:nth-child(1) {
+  color: #9356DC;
+}
+#loader i:nth-child(2) {
+  color: #FF79DA;
+}
+#loader i {
+  font-size: 50px;
+}
+
+#rotate {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
 
 /*# sourceMappingURL=style.css.map */

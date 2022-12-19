@@ -1,0 +1,29 @@
+#loader {
+    background-color: $color-tertiary;
+    width: 110vw;
+    height: 110vh;
+    margin-top: -100px;
+    margin-left: -5vw;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    i:nth-child(1) {
+        color: $color-primary;
+    }
+
+    i:nth-child(2) {
+        color: $color-secondary;
+    }
+
+    i {
+        font-size: 50px;
+    }
+}
+
+#rotate {
+    display: flex;
+    justify-content:space-between;
+    width: 150px;
+}
