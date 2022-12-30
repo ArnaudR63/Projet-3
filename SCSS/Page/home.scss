@@ -1,0 +1,113 @@
+#location {
+    padding: 20px;
+    background-color: #00000015;
+
+    i {
+        display: flex;
+        align-content: center;
+        column-gap: 10px;
+        margin-left: calc(50vw - 125px);
+    }
+}
+
+#discover {
+    padding: 30px;
+    background-color: #00000005;
+
+    .thin {
+        font-size: 20px;
+    }
+}
+
+#fonctionnement {
+    display: grid;
+    row-gap: 20px;
+    padding: 10vw;
+
+    .step {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .b-purple {
+        font-size: 15px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+
+        p {
+            color: $background
+        }
+    }
+
+    i {
+        padding: 20px;
+        background: #00000005;
+        border-radius: 15px;
+        width: 70vw;
+        margin-left: 10px; 
+	box-shadow: 0px 10px 5px #00000025;
+
+	&:hover {
+		background: #00000015;
+
+		&:before {
+			color: $color: primary;
+		}
+	}
+	
+    }
+}
+
+#restaurants {
+	background: #00000015;
+	padding-bottom: 50px;
+
+	h2 {
+  	    padding-top: 50px;
+ 	    padding-left: 5vw;
+	}
+
+	.cards-resto{
+	    width: 90vw;
+	    margin-left: auto;
+	    margin-right: auto;
+	    border-radius: 15px;
+	}
+
+	img {
+	    max-width: 100%;
+	    height: 200px;
+	    object-fit: cover;
+	    border-top-left-radius: 15px;
+	    border-top-right-radius: 15px;
+	}
+
+	.excerpt-resto {
+	    display: flex;
+	    align-items: center;
+	}
+
+	h3 {
+	    margin-bottom: 0;
+	}
+
+	p {
+	    margin-top: 5px;
+	}
+
+	.left {
+	    margin-left: 5%;
+	    width: 50%;
+	}
+
+
+	.right {
+	    width: 35%
+	}
+}

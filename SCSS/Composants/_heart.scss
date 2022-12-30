@@ -1,0 +1,11 @@
+.far.fa-heart:active{
+    color: $color-primary;
+    background: url("../images/heart-full.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include heart;
+}
+
+.far.fa-heart {
+    color: #000000;
+}
