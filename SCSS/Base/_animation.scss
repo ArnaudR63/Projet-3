@@ -2,7 +2,6 @@
     @keyframes rotate {
         from {
             transform: rotate(0deg);
-
         }
 
         to {
@@ -45,12 +44,15 @@
     @keyframes empty-full {
         from {
             background-size: 0;
+	    color: $text;
         }
 
         to {
             background-size: 15px;
+	    color: rgba($text, 0);
         }
     }
+
     animation: empty-full 1s 0s 1 both;
 }
 
@@ -66,6 +68,7 @@
             margin-top: 0%;
         }
     }
+
     animation: apparition-bas-haut 0.2 0s 1 both;
 }
 
@@ -81,5 +84,6 @@
             translate: 0;
         }
     }
+
     animation: apparition-droite-gauche 2s 0s 1 both;
 }

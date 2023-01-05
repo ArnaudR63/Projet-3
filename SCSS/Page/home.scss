@@ -1,6 +1,6 @@
 #location {
     padding: 20px;
-    background-color: #00000015;
+    background-color: rgba($text, .15);
 
     i {
         display: flex;
@@ -12,7 +12,10 @@
 
 #discover {
     padding: 30px;
-    background-color: #00000005;
+    background-color: rgba($text, .05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .thin {
         font-size: 20px;
@@ -45,19 +48,36 @@
         }
     }
 
-    i {
-        padding: 20px;
-        background: #00000005;
+    .step-block {
+        background: rgba($text, .05);
         border-radius: 15px;
         width: 70vw;
         margin-left: 10px; 
-	box-shadow: 0px 10px 5px #00000025;
+	box-shadow: 0px 10px 5px rgba($text, .25);
+	display: flex;
+	align-items: center;
+	
+	&:hover {
+		background: rgba($text, .15);
+
+		::before {
+			color: $color-primary;
+		}
+	}
+    }
+
+    i {
+        padding: 10px;
+
+	&:before {
+	   margin-left: 10px; 
+	}
 
 	&:hover {
-		background: #00000015;
+		background: rgba($text, .15);
 
 		&:before {
-			color: $color: primary;
+			color: $color-primary;
 		}
 	}
 	
@@ -65,7 +85,7 @@
 }
 
 #restaurants {
-	background: #00000015;
+	background: rgba($text, .025);
 	padding-bottom: 50px;
 
 	h2 {
@@ -74,18 +94,55 @@
 	}
 
 	.cards-resto{
-	    width: 90vw;
-	    margin-left: auto;
-	    margin-right: auto;
+	    width: 85vw;
+	    background: $background;
+	    margin-left: 5vw;
+	    margin-right: 5vw;
 	    border-radius: 15px;
+	    margin-bottom: 50px;
+	    box-shadow: 0px 0px 25px rgba($text, .25);
 	}
 
 	img {
+
 	    max-width: 100%;
+
+	    width: 85vw;
+
 	    height: 200px;
+
 	    object-fit: cover;
+
 	    border-top-left-radius: 15px;
+
 	    border-top-right-radius: 15px;
+
+	}
+
+
+   
+        .new {
+
+	    position: absolute;
+
+	    background: $color-tertiary;
+
+	     color: darken($color-tertiary, 50%);
+
+	     padding: 5px;
+
+      	     margin-left: 66vw;
+
+	     margin-top: 15px;
+
+	     border-radius: 2px;
+
+		
+		p {
+
+		    margin: 0;
+
+		}
 	}
 
 	.excerpt-resto {

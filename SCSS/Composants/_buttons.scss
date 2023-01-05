@@ -1,0 +1,17 @@
+button {
+    color: $background;
+    background: linear-gradient($color-secondary, $color-primary);
+    padding: 20px;
+    border: 0;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba($text, .5);
+    transition: all 0.2s;
+}
+
+button:hover {
+    $color-primary: lighten($color-primary, 5%);
+    $color-secondary: lighten($color-secondary, 5%);
+    background: linear-gradient($color-secondary, $color-primary);
+    box-shadow: 0px 10px 15px rgba($text, .5);
+}
