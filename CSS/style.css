@@ -65,6 +65,7 @@ body {
   width: 100vw;
   margin: 0;
   padding-top: 50px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p, i {
@@ -222,6 +223,12 @@ button:hover {
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  transition: all 0.3s;
+}
+#fonctionnement .step-block p {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
 }
 #fonctionnement .step-block:hover {
   background: rgba(0, 0, 0, 0.15);
@@ -234,6 +241,7 @@ button:hover {
 }
 #fonctionnement i::before {
   margin-left: 10px;
+  transition: all 0.3s;
 }
 
 #restaurants {
@@ -253,6 +261,10 @@ button:hover {
   margin-bottom: 50px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
 }
+#restaurants a {
+  display: flex;
+  justify-content: end;
+}
 #restaurants img {
   max-width: 100%;
   width: 85vw;
@@ -269,6 +281,7 @@ button:hover {
   margin-left: 66vw;
   margin-top: 15px;
   border-radius: 2px;
+  margin-right: 15px;
 }
 #restaurants .new p {
   margin: 0;
