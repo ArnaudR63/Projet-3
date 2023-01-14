@@ -1,0 +1,46 @@
+main > img {
+    object-fit: cover;
+    width: 100vw;
+    height: 300px
+}
+
+#menu-resto {
+    position: relative;
+    margin-top: -75px;
+}
+
+#page-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: "Shrikhand",  "Roboto", sans-serif;
+}
+
+.underline-h2 {
+    width: 60px;
+    position: relative;
+    border-bottom: 2px solid $color-tertiary;
+	margin-bottom: 15px;
+	
+    h2 {
+    width: 200px;
+    margin-bottom: 5px;
+    }
+
+    &.decale {
+	margin-left: 20px;
+    }
+}
+
+button {
+  margin: 15px;
+  margin-left: 15px;
+  width: 60vw;
+  }

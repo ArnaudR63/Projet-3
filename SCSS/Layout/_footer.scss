@@ -14,8 +14,19 @@ footer {
     }
 
     a {
-	color: $background;
-	text-decoration: none;
-	font-size: 15px;
+		color: $background;
+		text-decoration: none;
+		font-size: 15px;
+	
+		i::before {
+			margin-right: 10px;
+			display: inline-block;
+			width: 16px;
+			overflow: clip;
+		}
+		
+		.fas.fa-utensils::before {
+			font-size: 18px;
+		}
     }
 }

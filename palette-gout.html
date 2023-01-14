@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-menu.css">
     <link rel="shortcut icon" type="image/svg" href="images/ohmyfood-logo.svg">
     <script src="https://kit.fontawesome.com/252e95885c.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,79 +19,118 @@
 
 <body>
     <div id="loader">
-        <p>Votre page se charge</p>
+        <p>Votre page <br>se charge</p>
         <div id="rotate">
             <i class="fas fa-bowl-food"></i>
             <i class="fas fa-utensils"></i>
         </div>
+    </div>
 <main>
-    <img src="images/le-delice-des-sens.jpg" alt="Restaurant Le délice des sens">
+    <img src="images/la-palette-du-gout.jpg" alt="Restaurant La palette du goût">
     <section id="menu-resto">
-    <div class="page-title">
+    <div id="page-title">
         <h1>La palette du goût</h1>
         <i class="far fa-heart"></i>
     </div>
     <div class="menu">
         <div class="underline-h2">
-            <h2>ENTRÉES</h2>
+            <h2 class="thin">ENTRÉES</h2>
         </div>
-        <div class="plats">
-            <h3 class="bold">Fricassée d'escargot</h3>
-            <p>Au piment d'Espelette <span class="right bold">25€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        <div class="plats plat1">
+			<div class="text-plat">
+				<h3 class="bold">Fricassée d'escargot</h3>
+				<div class="content">
+					<p>Au piment d'Espelette</p><p class="right bold">25€</p>
+				</div>
+			</div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
         </div>
-        <div class="plats">
-            <h3 class="bold">Foie gras de canard mi-cuit</h3>
-            <p>Et ses copeaux de truffe noire <span class="right bold">35€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        <div class="plats plat2">
+			<div class="text-plat">
+				<h3 class="bold">Foie gras de canard mi-cuit</h3>
+				<div class="content">
+					<p>Et ses copeaux de truffe noire</p><p class="right bold">35€</p>
+				</div>
+            </div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
         </div>
-        <div class="plats">
-            <h3 class="bold">Œuf au plat</h3>
-            <p>Assaisonné à la truffe sur lit de caviar <span class="right bold">20€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        <div class="plats plat3">
+            <div class="text-plat">
+				<h3 class="bold">Œuf au plat</h3>
+				<div class="content">
+					<p>Assaisonné à la truffe sur lit de caviar</p><p class="right bold">20€</p>
+				</div>
+            </div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="underline-h2 decale">
+            <h2 class="thin">PLATS</h2>
+        </div>
+        <div class="plats plat4">
+            <div class="text-plat">
+				<h3 class="bold">Filet de boeuf aux herbes</h3>
+				<div class="content">
+					<p>Accompagné de sa ribambelle de légumes</p><p class="right bold">40€</p>
+				</div>
+			</div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        </div>
+        <div class="plats plat5">
+			<div class="text-plat">
+				<h3 class="bold">Parmentier de queue de boeuf</h3>
+				<div class="content">
+					<p>À la truffe noire sur sa purée de panais</p><p class="right bold">35€</p>
+				</div>
+            </div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        </div>
+        <div class="plats plat6">
+			<div class="text-plat">
+				<h3 class="bold">Filet de turbot </h3>
+				<div class="content">
+					<p>Aux agrumes</p><p class="right bold">44€</p>
+				</div>
+			</div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
         </div>
     </div>
     <div class="menu">
         <div class="underline-h2">
-            <h2>PLATS</h2>
+            <h2 class="thin">DESSERTS</h2>
         </div>
-        <div class="plats">
-            <h3 class="bold">Filet de boeuf aux herbes</h3>
-            <p>Accompagné de sa ribambelle de légumes <span class="right bold">40€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        <div class="plats plat7">
+			<div class="text-plat">
+				<h3 class="bold">Paris-Brest</h3>
+				<div class="content">
+					<p>Revisité</p><p class="right bold">18€</p>
+				</div>
+            </div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
         </div>
-        <div class="plats">
-            <h3 class="bold">Parmentier de queue de boeuf</h3>
-            <p>À la truffe noire sur sa purée de panais <span class="right bold">35€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        <div class="plats plat8">
+			<div class="text-plat">
+				<h3 class="bold">Macaron au chocolat d'exception</h3>
+				<div class="content">
+					<p>Et glace à la vanille de Madagascar <p class="right bold">22€</p></p>
+				</div>
+			</div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
         </div>
-        <div class="plats">
-            <h3 class="bold">Filet de turbot </h3>
-            <p>Aux agrumes <span class="right bold">44€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
-        </div>
-    </div>
-    <div class="menu">
-        <div class="underline-h2">
-            <h2>DESSERTS</h2>
-        </div>
-        <div class="plats">
-            <h3 class="bold">Paris-Brest</h3>
-            <p>Revisité <span class="right bold">18€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
-        </div>
-        <div class="plats">
-            <h3 class="bold">Macaron au chocolat d'exception</h3>
-            <p>Et glace à la vanille de Madagascar <span class="right bold">22€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
-        </div>
-        <div class="plats">
-            <h3 class="bold">Mousse au chocolat</h3>
-            <p>Au piment d'Espelette et à la truffe noire <span class="right bold">23€</span></p>
-            <div class="check-hover"><i class="fas fa-circle-check"></i></div>
+        <div class="plats plat9">
+			<div class="text-plat">
+				<h3 class="bold">Mousse au chocolat</h3>
+				<div class="content">
+					<p>Au piment d'Espelette et à la truffe noire <p class="right bold">23€</p></p>
+				</div>
+			</div>
+			<div class="check-hover"><i class="fas fa-circle-check"></i></div>
         </div>
     </div>
-    <button class="pink-purple">Commander</button>
+	<div class="command-button">
+		<button class="pink-purple">Commander</button>
+	</div>
     </section>
 </main>
 </body>

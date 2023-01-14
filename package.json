@@ -5,7 +5,7 @@
   "main": "./SCSS/index.scss",
   "scripts": {
     "sass": "sass --watch ./SCSS/index.scss:./CSS/style.css",
-    "sass-menu": "sass --watch ./SCSS/menu.scss:./CSS/style-menu.css"
+    "sass-menu": "sass --watch ./SCSS/menu.scss:./CSS/style-menu.css" --style compressed
   },
   "repository": {
     "type": "git",

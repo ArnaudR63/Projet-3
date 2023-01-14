@@ -13,6 +13,7 @@ header {
 	justify-content: space-between;
    	width: 55vw;
     	margin-left: 30px;
+	margin-top: 15px;
     }
 
 	i {
@@ -22,7 +23,6 @@ header {
 	img {
 	    height: 30px;
 	    position: absolute;
-	    margin-left: 27vw;
-	    margin-top: 50px;
+	    margin-left: calc(27vw - 45px);
 	}
 }
