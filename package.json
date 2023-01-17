@@ -4,8 +4,8 @@
   "description": "Package du projet 3",
   "main": "./SCSS/index.scss",
   "scripts": {
-    "sass": "sass --watch ./SCSS/index.scss:./CSS/style.css",
-    "sass-menu": "sass --watch ./SCSS/menu.scss:./CSS/style-menu.css" --style compressed
+    "sass": "sass --watch --style compressed ./SCSS/index.scss:./CSS/style.css",
+    "sass-menu": "sass --watch --style compressed ./SCSS/menu.scss:./CSS/style-menu.css"
   },
   "repository": {
     "type": "git",

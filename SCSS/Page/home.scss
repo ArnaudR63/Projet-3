@@ -165,3 +165,56 @@
 	    width: 35%
 	}
 }
+
+@media screen and (min-width: 768px) {	
+	#fonctionnement {
+		grid-template-columns: 30vw 30vw 30vw;
+		padding: 6vw;
+
+		.step {
+			width: 27vw;
+			flex-direction: column;
+		}
+
+		.b-purple {
+			font-size: 25px;
+			padding: 10px;
+			margin-top: -25px;
+		}
+
+		.step-block {
+			width: 27vw;
+		}
+
+		i {
+			font-size: 15px;
+			padding-left: 0;
+			padding-right: 15px;
+			overflow: hidden;
+		}
+	}
+
+	#restaurants-list {
+		display: grid;
+		grid-template-columns: 45vw 45vw;
+		column-gap: 5vw;
+		margin-left: 3vw;
+
+		.cards-resto {
+			width: 45vw;
+			margin-left: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#restaurants-list {
+		grid-template-columns: 23vw 23vw 23vw 23vw;
+		column-gap: 2vw;
+		margin-left: 1vw;
+
+		.cards-resto {
+			width: 23vw;
+		}
+	}
+}
