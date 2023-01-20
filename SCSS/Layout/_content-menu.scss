@@ -43,7 +43,7 @@
 	border-bottom-right-radius: 20px;
 	border-top-right-radius: 20px;
 	margin-left: auto;
-	padding: 30px 17px;
+	padding: 30.5px 17px;
 	opacity: 0;
 	
 	&:hover + .text-plat {
@@ -55,4 +55,35 @@
 	display: flex;
 	justify-content: center;
 	margin:15px;
+}
+
+@media screen and (min-width: 768px) {
+	.content-menu {
+		display: grid;
+		grid-template-columns: 45vw 45vw;
+		column-gap: 5vw;
+	}
+
+	.text-plat {
+		min-width: 40vw;
+	}
+	.plats:hover .text-plat {
+		min-width: 40vw;
+		transition: all 1s 0s;
+	}
+
+	.plats:hover .check-hover {
+		@keyframes apparition-bas-check {
+			from {
+				opacity: 0;
+				margin-top: 200px;
+			}
+	
+			to {
+				opacity: 1;
+				margin-top: 0px;
+			}
+		}
+		animation: apparition-bas-check 1.5s .3s 1 both;
+	}
 }
