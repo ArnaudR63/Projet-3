@@ -10,51 +10,73 @@
 	box-shadow: 0px 0px 20px #00000050;
 	border-radius: 20px;
 	@include apparition-bas;
-	padding-left: 10px
+	padding-left: 10px;
+	overflow: hidden;
+
+	@media screen and (min-width: 992px) {
+		&:hover .text-plat .content {
+			width: 100%;
+			transition: all 1.5s .2s;
+		}
+	}
+
 }
 
 .text-plat {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	text-align: left;
-	min-width: 80vw;
-	
+	min-width: 90vw;
+
 	h3 {
-	margin-bottom: 0;
+		margin-bottom: 0;
+		overflow: hidden;
 	}
-	
+
 	p {
-	margin-top: 0;
+		margin-top: 0;
+	}
+
+	.right.bold {
+		overflow: visible;
 	}
 
 	.content {
 		display: flex;
 		justify-content: space-between;
-	}
-	
-	&.right.bold {
-		width: 55px;
+		max-width: 90%;
+
+		@media screen and (min-width:992px) {
+			width: calc(100% + 40px);
+		}
 	}
 }
 
 .check-hover {
 	color: $background;
-	background: $color-tertiary;
+	background: $background;
 	border-bottom-right-radius: 20px;
 	border-top-right-radius: 20px;
 	margin-left: auto;
-	padding: 30.5px 17px;
-	opacity: 0;
-	
-	&:hover + .text-plat {
-	width: calc(100% - 50px)
+	padding: 30.5px 0px;
+	overflow: hidden;
+	text-overflow: clip;
+	cursor: pointer;
+
+	&:hover+.text-plat {
+		width: calc(100% - 50px);
+	}
+
+	.fas.fa-circle-check {
+		width: 16px;
+		rotate: -.75turn;
 	}
 }
 
 .command-button {
 	display: flex;
 	justify-content: center;
-	margin:15px;
+	margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,25 +87,18 @@
 	}
 
 	.text-plat {
-		min-width: 40vw;
-	}
-	.plats:hover .text-plat {
-		min-width: 40vw;
-		transition: all 1s 0s;
+		min-width: 48vw;
 	}
 
-	.plats:hover .check-hover {
-		@keyframes apparition-bas-check {
-			from {
-				opacity: 0;
-				margin-top: 200px;
-			}
-	
-			to {
-				opacity: 1;
-				margin-top: 0px;
-			}
-		}
-		animation: apparition-bas-check 1.5s .3s 1 both;
+	.plats:hover .text-plat {
+		min-width: 38.5vw;
+		transition: all 1s 0s;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.menu .content-menu {
+		grid-template-columns: calc(100% / 2 - 1vw) calc(100% / 2 - 2vw);
+		column-gap: 1vw;
 	}
 }

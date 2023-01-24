@@ -2,6 +2,7 @@
 .text {
     font-family: 'Roboto', sans-serif;
     text-overflow: ellipsis;
+    max-width: 1400px;
 
     .page-title h1 {
         font-family: 'Shrikhand', sans-serif;
@@ -59,3 +60,14 @@ i {
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+@media screen and (min-width: 992px) {
+    main *, header {        
+        max-width: 1400px;
+    }
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
