@@ -53,12 +53,14 @@
 }
 
 .check-hover {
-	color: $background;
 	background: $background;
 	border-bottom-right-radius: 20px;
 	border-top-right-radius: 20px;
 	margin-left: auto;
-	padding: 30.5px 0px;
+	width: 0px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
 	overflow: hidden;
 	text-overflow: clip;
 	cursor: pointer;
@@ -68,8 +70,11 @@
 	}
 
 	.fas.fa-circle-check {
-		width: 16px;
-		rotate: -.75turn;
+		font-size: 27px;
+		align-items: center;
+		display: flex;
+		transform:rotate(-.75turn);
+		color:$background;
 	}
 }
 
@@ -100,5 +105,9 @@
 	.menu .content-menu {
 		grid-template-columns: calc(100% / 2 - 1vw) calc(100% / 2 - 2vw);
 		column-gap: 1vw;
+	}
+
+	.text-plat {
+		min-width: 45vw;
 	}
 }

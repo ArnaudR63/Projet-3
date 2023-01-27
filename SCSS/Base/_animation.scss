@@ -29,11 +29,11 @@
 #loader {
     @keyframes disparition {
         from {
-            translate: 0vw;
+            transform: translate(0vw);
         }
 
         to {
-            translate: -200vw;
+            transform: translate(-200vw);
         }
     }
 
@@ -44,12 +44,12 @@
     @keyframes empty-full {
         from {
             background-size: 0;
-	    color: $text;
+            color: $text;
         }
 
         to {
             background-size: 15px;
-	    color: rgba($text, 0);
+            color: rgba($text, 0);
         }
     }
 
@@ -57,18 +57,19 @@
 }
 
 @mixin rotate-check {
-	@keyframes rotate-check-hover {
-		from {
-			rotate: -360deg;
-            width:0px;
-		}
-		to {
-			rotate: 0deg;
-            width:15px;
-		}
-	}
-	
-	animation: rotate-check-hover 0.3s 0s 2 both;
+    @keyframes rotate-check-hover {
+        from {
+            rotate: -360deg;
+            width: 0px;
+        }
+
+        to {
+            rotate: 0deg;
+            width: 15px;
+        }
+    }
+
+    animation: rotate-check-hover 0.3s 0s 2 both;
 }
 
 @mixin apparition-bas {
@@ -83,42 +84,41 @@
             margin-top: 0%;
         }
     }
-	
-	@while $apparition < length($plats) {
-	    &.plat#{$i} {
-		animation: apparition-bas-haut 1.5s $apparition 1 both;
-	    }
-	$apparition: $apparition + .5;
-	$i: $i + 1;
-	}
+
+    @while $apparition < length($plats) {
+        &.plat#{$i} {
+            animation: apparition-bas-haut 1.5s $apparition 1 both;
+        }
+
+        $apparition: $apparition + .5;
+        $i: $i + 1;
+    }
 }
 
 .plats:hover {
-	.check-hover{
-		@keyframes apparition-droite-gauche {
-			from {
-				min-width:0px;
-                padding: 30.5px 0px;
+    .check-hover {
+        @keyframes apparition-droite-gauche {
+            from {
+                min-width: 0px;
                 background: $color-tertiary;
-			}
+            }
 
-			to {
-				min-width:16px;
-                padding: 30.5px 30.5px;
+            to {
+                min-width: 80px;
                 background: $color-tertiary;
-			}
-		}
+            }
+        }
 
-		animation: apparition-droite-gauche 1.5s 0s 1 both;
-		
-		.fas.fa-circle-check {
-			rotate: -2turn;
+        animation: apparition-droite-gauche 1s 0s 1 both;
+
+        .fas.fa-circle-check {
+            transform: rotate(1turn);
             transition: all 1s 0s;
-		}
-	}
-	
-	.text-plat {
-		min-width: calc(90vw - 61px);
-		transition: all 1s 0s;
-	}
+        }
+    }
+
+    .text-plat {
+        min-width: calc(90vw - 90px);
+        transition: all 1s 0s;
+    }
 }

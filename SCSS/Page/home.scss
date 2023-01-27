@@ -8,7 +8,9 @@
 		column-gap: 10px;
 	}
 
-
+	.text {
+		font-weight: bold;
+	}
 }
 
 #discover {
@@ -219,16 +221,5 @@
 		display: flex;
 		justify-content: center;
 		width: 67%;
-	}
-}
-
-@media screen and (min-idth: 1400px) {
-	#fonctionnement {
-		grid-template-columns: 20vw 20vw 20vw;
-		padding: 6%;
-
-		.step {
-			width: 20vw;
-		}
 	}
 }
