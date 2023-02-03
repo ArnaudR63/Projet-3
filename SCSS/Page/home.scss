@@ -159,8 +159,9 @@
 
 @media screen and (min-width: 768px) {
 	#fonctionnement {
-		grid-template-columns: 30vw 30vw 30vw;
+		grid-template-columns: 30% 30% 30%;
 		padding: 6%;
+		column-gap: 6%;
 
 		* {
 			max-width: calc(1400px * .27)
@@ -208,12 +209,12 @@
 
 @media screen and (min-width: 992px) {
 	#restaurants-list {
-		grid-template-columns: 23vw 23vw 23vw 23vw;
-		column-gap: 2vw;
+		grid-template-columns: 23% 23% 23% 23%;
+		column-gap: 2%;
 		margin-left: 1vw;
 
 		.cards-resto {
-			width: 23vw;
+			width: 100%;
 		}
 	}
 
